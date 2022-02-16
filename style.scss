@@ -61,20 +61,24 @@ body {
 // -----------------------------------------------------
 // Partie 2:
 
- .anim{
-   
+ .anim
+ {
+    position: relative;
     background-color: white;
     width: 330px;
     margin-top: 150px;
     overflow: hidden;
     box-shadow: 5px 5px 5px grey;
-    img{
+    img.octodon{
+        width: 100%;
+        display: flex;
         opacity: 1;
-        transition: opacity 333ms ease-in-out;
+        transition: opacity 333ms ease-in-out,transform 333ms ease-in-out;
 }
     &:hover{
-          img{
+          img.octodon{
             opacity: 0.5;
+            transform: scale(1.5);
              }
            }
  }
@@ -82,17 +86,32 @@ body {
 .anim__image{
  
   img{
-    width: 100%;
-    display: flex; 
-    }   
+    position:relative;
+}
+    .date{
+        position:absolute;
+        border-radius: 100%;
+        border:1px solid orangered;
+        background-color: orangered;
+        font-family: sans-serif;
+        color:white;
+        font-size: 12px;
+        padding: 6px;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        top:10px;
+        right: 20px;
+    }
 }
 
-.anim__text{
-    
+.anim__text{    
+
+    position: relative;
     height: 140px;
     background-color: white;
-    padding: 15px; 
-    transition: transform 330ms ease;
+    padding: 20px; 
+    transition: transform 330ms ease-in-out;
         p{
         font-family: sans-serif;
         color:gray; 
@@ -105,10 +124,19 @@ body {
         transform: translateY(-90px);
             p{
             opacity:1;
-        }
-    }
-   
-    
+                 }
+                }
+   .photos{
+        border:1px solid orangered;
+        background-color: orangered;
+        width: 70px;
+        padding: 10px;
+        position: absolute;
+        top:-65px;
+        left: 0px;
+        text-align: center;
+        transform:translate(0px);
+    }  
 }
 
 .footer{
@@ -135,27 +163,24 @@ body {
        width: 15.5px;
        padding-right: 5px;
        float: left;
-    }
-
-
-
-   
-
-    
+    }   
 }
+
 h1{
     text-transform: uppercase;
     color: black;
     font-family: sans-serif;
     letter-spacing: 2px;
 }
+
 h2{
     color: grey;
      color: saddlebrown;
-    font-family: sans-serif;
+    font-family: "URW Ghotic L";
     letter-spacing: 2px;
     font-size:20px;
     font-weight: lighter;
     text-transform: uppercase;
     line-height: 30px;
 }
+
