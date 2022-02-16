@@ -77,7 +77,7 @@ body {
   position: absolute;
   border-radius: 100%;
   border: 1px solid orangered;
-  background-color: orangered;
+  background-color: saddlebrown;
   font-family: sans-serif;
   color: white;
   font-size: 12px;
@@ -147,7 +147,7 @@ h1 {
 h2 {
   color: grey;
   color: saddlebrown;
-  font-family: "URW Ghotic L";
+  font-family: sans-serif;
   letter-spacing: 2px;
   font-size: 20px;
   font-weight: lighter;
